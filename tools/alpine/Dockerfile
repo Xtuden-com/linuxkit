@@ -70,7 +70,7 @@ RUN set -e && \
         cp iucode_tool /iucode_tool; \
     fi
 
-FROM alpine:3.11
+FROM alpine:latest
 
 COPY --from=mirror /etc/apk/repositories /etc/apk/repositories
 COPY --from=mirror /etc/apk/repositories.upstream /etc/apk/repositories.upstream
